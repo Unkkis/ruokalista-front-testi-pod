@@ -9,7 +9,7 @@ export default function Recipelist() {
 
 
     useEffect( () => {
-        fetch('${API_URL}')
+        fetch('https://ruokalista-backend-testi-ruokalista-app.apps.hhocp.otaverkko.fi/api/recipes')
         .then(response => response.json())
         .then(data => setRecipes(data))
 
