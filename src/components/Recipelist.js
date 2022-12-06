@@ -6,10 +6,10 @@ import { DataGrid } from '@mui/x-data-grid';
 export default function Recipelist() {
 
     const [recipes, setRecipes] = useState([]);
-
+    const url = '172.30.254.197/api/recipes';
 
     useEffect( () => {
-        fetch('https://ruokalista-backend-testi-ruokalista-app.apps.hhocp.otaverkko.fi/api/recipes')
+        fetch(url)
         .then(response => response.json())
         .then(data => setRecipes(data))
 
