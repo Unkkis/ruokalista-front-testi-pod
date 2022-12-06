@@ -6,7 +6,7 @@ import { DataGrid } from '@mui/x-data-grid';
 export default function Recipelist() {
 
     const [recipes, setRecipes] = useState([]);
-    const url = '172.30.254.197/api/recipes';
+    const url = 'https://172.30.254.197/api/recipes';
 
     useEffect( () => {
         fetch(url)
